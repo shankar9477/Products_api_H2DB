@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GitHubWebhookController 
 {
      
-	@PostMapping("/github-webhook")
+	@PostMapping("/github-webhook/")
     public ResponseEntity<String> handleGitHubPush(@RequestBody String payload,
                                                    @RequestHeader("X-GitHub-Event") String eventType,
                                                    @RequestHeader("X-GitHub-Delivery") String deliveryId)
